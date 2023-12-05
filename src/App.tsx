@@ -116,7 +116,9 @@ function App() {
           <MapContainer
             className="fixed h-[80vh] w-full z-0 bottom-0"
             center={[
-              parseFloat(data?.location.lat) + 0.001,
+              windowWidth <= 768
+                ? parseFloat(data?.location.lat) + 0.0022
+                : parseFloat(data?.location.lat) + 0.001,
               parseFloat(data?.location.lng),
             ]}
             zoom={17}
@@ -125,7 +127,9 @@ function App() {
           >
             <ChangeView
               center={[
-                parseFloat(data?.location.lat) + 0.001,
+                windowWidth <= 768
+                  ? parseFloat(data?.location.lat) + 0.0022
+                  : parseFloat(data?.location.lat) + 0.001,
                 parseFloat(data?.location.lng),
               ]}
               zoom={17}

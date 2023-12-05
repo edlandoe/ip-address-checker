@@ -35,19 +35,19 @@ export default function IpInput({ onSubmit, onError }: IpInputProps) {
           onError(true);
         }
       }}
-      className="mt-10 flex flex-row z-10 w-full max-w-xl justify-center"
+      className="mt-5 flex flex-row z-10 w-full max-w-xl justify-center"
     >
       <input
         type="text"
         name="ip"
         id="ip"
         placeholder="Search Any IP Address or domain"
-        className="p-5 rounded-l-2xl w-full text-base md:text-lg focus:outline-none placeholder:font-Rubik"
+        className="p-5 rounded-l-2xl w-full font-medium text-sm md:font-normal md:text-lg focus:outline-none placeholder:font-Rubik"
         onChange={(e) => setInputVal(e.target.value)}
       />
       <button
         type="submit"
-        className="px-7 bg-black text-white font-bold rounded-r-2xl hover:bg-very-dark-gray transition-colors"
+        className="px-7 bg-black text-white rounded-r-2xl hover:bg-very-dark-gray transition-colors"
       >
         <img src={arrow} alt="submit" />
       </button>
