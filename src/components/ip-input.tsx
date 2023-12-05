@@ -42,7 +42,7 @@ export default function IpInput({ onSubmit, onError }: IpInputProps) {
         name="ip"
         id="ip"
         placeholder="Search Any IP Address or domain"
-        className="p-5 rounded-l-2xl w-full font-medium text-sm md:font-normal md:text-lg focus:outline-none placeholder:font-Rubik"
+        className="p-5 rounded-l-2xl rounded-r-none w-full font-medium text-sm md:font-normal md:text-lg focus:outline-none placeholder:font-Rubik"
         onChange={(e) => setInputVal(e.target.value)}
       />
       <button
